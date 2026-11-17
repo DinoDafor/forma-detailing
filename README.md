@@ -63,7 +63,9 @@ node server.mjs
 
 Сайт опубликован: https://forma-detailing-dinodafor.netlify.app/ — общедоступный адрес без входа. Панель проекта: https://app.netlify.com/projects/forma-detailing-dinodafor/overview . Технические идентификаторы сохранены в `netlify-deployment.json`.
 
-Публикация выполнена ручной загрузкой ZIP, автоматическое обновление из Git пока не подключено. Для обновления загрузите актуальное содержимое `dist/` в раздел Deploys этого же проекта. Служебные файлы `.netlify/` и локальные архивы `deploy/` исключены из Git.
+Подключено автоматическое обновление из [GitHub](https://github.com/DinoDafor/forma-detailing): каждый пуш в `main` запускает публикацию `dist/` на Netlify. Команда сборки не требуется. Локальный `main` отслеживает `origin/main`; автор коммитов — Mike Mitin (DinoDafor). Прежняя служебная история сохранена только локально в ветке `codex/sites-history-20261117` и не отправляется в GitHub.
+
+Для обновления сайта внесите изменения, затем выполните `git add`, `git commit` и `git push`. Ручная загрузка ZIP остаётся запасным способом публикации. Служебные файлы `.netlify/`, локальные архивы `deploy/` и скриншоты `previews/` исключены из Git.
 
 ## Фотографии
 

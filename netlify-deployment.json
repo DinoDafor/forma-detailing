@@ -5,7 +5,9 @@
   "production_url": "https://forma-detailing-dinodafor.netlify.app/",
   "admin_url": "https://app.netlify.com/projects/forma-detailing-dinodafor/overview",
   "initial_deploy_id": "6af83e12882264dedfc56d77",
-  "deployment_method": "manual_zip",
+  "deployment_method": "git",
   "publish_directory": "dist",
-  "git_continuous_deployment": false
+  "git_continuous_deployment": true,
+  "repository_url": "https://github.com/DinoDafor/forma-detailing",
+  "production_branch": "main"
 }
