@@ -1,0 +1,12 @@
+[
+  {
+    "key": "technical",
+    "transparent_background": true,
+    "prompt": "Use case: product-mockup. Asset: interactive car protection selector on a website. Generate a photorealistic overhead orthographic view of a contemporary silver metallic sports coupe, entire vehicle visible, car perfectly horizontal with its FRONT / NOSE pointing to the RIGHT and REAR on the LEFT. Directly top-down, zero perspective tilt. Narrow elegant silhouette, realistic silver paint, black glass panoramic roof and dark windows, visible side mirrors and headlights, subtle studio reflections. Center the entire vehicle in a wide landscape frame, generous transparent margins around all sides. Car fills about 85 percent of image width and 60 percent of height. Genuine transparent background, small natural soft contact shadow only. No ground, no road, no floor, no text, no labels, no brand logos, no watermark. Crisp high resolution, premium automotive catalogue photography. This is the car asset alone, not a webpage."
+  },
+  {
+    "key": "culture",
+    "transparent_background": false,
+    "prompt": "Use case: ads-marketing. Asset: editorial photograph for an independent car detailing atelier's landing page. Photorealistic medium-format film photograph, landscape 3:2. A beautifully maintained deep burgundy vintage rear-engined sports coupe with a classic 1980s silhouette, entire car visible, side profile and subtle rear three-quarter view, vehicle facing left, parked in a quiet seafoam mint painted concrete garage. Low warm afternoon sun from the left, thoughtful real surface detail, deep glossy burgundy paint with fine reflections, brushed silver wheels. Large mint wall with subtle surface texture behind the car. Slightly imperfect authentic automotive editorial, understated enthusiast culture, carefully composed, no people. Camera around wheel-height, car fills lower two-thirds of frame with room above, no dramatic fisheye. Color palette seafoam mint, burgundy, warm sunlight, silver. No text, logos, signs or watermarks. This is a photograph alone, not a webpage."
+  }
+]

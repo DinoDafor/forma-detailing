@@ -1,0 +1,11 @@
+{
+  "provider": "netlify",
+  "project_name": "forma-detailing-dinodafor",
+  "site_id": "8f76d3f6-6718-4629-bb42-f3843b076297",
+  "production_url": "https://forma-detailing-dinodafor.netlify.app/",
+  "admin_url": "https://app.netlify.com/projects/forma-detailing-dinodafor/overview",
+  "initial_deploy_id": "6af83e12882264dedfc56d77",
+  "deployment_method": "manual_zip",
+  "publish_directory": "dist",
+  "git_continuous_deployment": false
+}
