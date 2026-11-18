@@ -88,6 +88,12 @@ function renderRequest() {
   const summary = document.querySelector('#request-summary');
   summary.replaceChildren();
   const fields = [ [tr('Автомобиль'), car], [tr('Услуга'), tr(serviceSelect.value)] ];
+  const packageEstimate = window.FormaCalculator?.getAppliedEstimate();
+  if (packageEstimate) {
+    const serviceField = fields.find(([label]) => label === tr('Услуга'));
+    serviceField[1] = packageEstimate.items.map(item => tr(item.name)).join(' + ');
+    fields.push([tr('Предварительная стоимость'), packageEstimate.formatted]);
+  }
   const task = document.querySelector('#task').value.trim();
   if (task) fields.push([tr('Задача'), task]);
   fields.forEach(([label, value]) => {
