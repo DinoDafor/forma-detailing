@@ -29,7 +29,9 @@ function clearApplied() {
 function syncBooking() {
   const estimate = getAppliedEstimate();
   if (!estimate?.items.length) { serviceSelect.selectedIndex = 0; clearApplied(); return; }
-  serviceSelect.value = estimate.items.length === 1 ? estimate.items[0].name : 'Помогите выбрать уход';
+  const singleService = estimate.items.length === 1 ? estimate.items[0].name : '';
+  serviceSelect.value = [...serviceSelect.options].some(option => option.value === singleService)
+    ? singleService : 'Помогите выбрать уход';
   document.querySelector('#booking-estimate-text').textContent = tr('Ваш набор:') + ' ' + estimate.items.map(item => tr(item.name)).join(' + ') + ' — ' + estimate.formatted;
   bookingEstimate.hidden = false;
 }
@@ -53,6 +55,15 @@ function render() {
   if (applied) syncBooking();
 }
 
+const zones = [...calculator.querySelectorAll('[data-zone]')];
+function showZone(activeZone) {
+  for (const button of zones) button.setAttribute('aria-pressed', String(button.dataset.zone === activeZone));
+  for (const choice of choices) {
+    const option = choice.closest('.calculator-option');
+    option.hidden = activeZone !== 'all' && option.dataset.serviceZone !== activeZone;
+  }
+}
+zones.forEach(button => button.addEventListener('click', () => showZone(button.dataset.zone)));
 choices.forEach(choice => choice.addEventListener('change', render));
 resetButton.addEventListener('click', () => {
   if (applied) serviceSelect.selectedIndex = 0;
@@ -76,6 +87,7 @@ applyButton.addEventListener('click', () => {
 document.querySelectorAll('[data-care-package]').forEach(link => {
   link.addEventListener('click', () => {
     const ids = link.dataset.carePackage.split(' ');
+    showZone('all');
     if (applied) serviceSelect.selectedIndex = 0;
     clearApplied();
     choices.forEach(choice => { choice.checked = ids.includes(choice.value); });

@@ -88,6 +88,8 @@ function renderRequest() {
   const summary = document.querySelector('#request-summary');
   summary.replaceChildren();
   const fields = [ [tr('Автомобиль'), car], [tr('Услуга'), tr(serviceSelect.value)] ];
+  const contact = document.querySelector('#contact-method').value.trim();
+  if (contact) fields.push([tr('Контакт'), contact]);
   const packageEstimate = window.FormaCalculator?.getAppliedEstimate();
   if (packageEstimate) {
     const serviceField = fields.find(([label]) => label === tr('Услуга'));
