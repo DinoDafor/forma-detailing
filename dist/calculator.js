@@ -73,6 +73,15 @@ applyButton.addEventListener('click', () => {
   const firstEmpty = [...form.querySelectorAll('[required]')].find(field => !field.value.trim());
   (firstEmpty ?? serviceSelect).focus({ preventScroll: true });
 });
+document.querySelectorAll('[data-care-package]').forEach(link => {
+  link.addEventListener('click', () => {
+    const ids = link.dataset.carePackage.split(' ');
+    if (applied) serviceSelect.selectedIndex = 0;
+    clearApplied();
+    choices.forEach(choice => { choice.checked = ids.includes(choice.value); });
+    render();
+  });
+});
 window.addEventListener('forma:languagechange', render);
 window.FormaCalculator = Object.freeze({ getAppliedEstimate, clearApplied });
 render();
