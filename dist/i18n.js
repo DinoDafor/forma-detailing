@@ -1,6 +1,16 @@
 (() => {
   'use strict';
   const english = {
+    "Отзывы": "Reviews",
+    "Вымышленные отзывы для примера.": "Fictional reviews for illustration.",
+    "После полировки следы от моек стали менее заметны. Понравилось, что мастер заранее объяснил, какие царапины останутся.": "After paint correction, wash marks were less visible. I liked that the technician explained beforehand which scratches would remain.",
+    "Алексей, полировка кузова": "Alexey, paint correction",
+    "Приехала за защитой нового автомобиля. Подобрали плёнку на переднюю часть кузова и объяснили, как ухаживать за ней после оклейки.": "I wanted to protect my new car. The team recommended film for the front end and explained how to look after it.",
+    "Марина, защитная плёнка": "Marina, paint protection film",
+    "Москва, ул. Кузовная, 12": "12 Kuzovnaya Street, Moscow",
+    "Условный адрес": "Illustrative address",
+    "Вт–сб, 10:00–19:00": "Tue–Sat, 10:00–19:00",
+    "Пример графика": "Illustrative hours",
     "Примеры ухода": "Care examples",
     "Что подойдёт вашему авто": "What suits your car",
     "Примеры подбора услуг. Фотографии иллюстрируют сценарии.": "Example service packages. The photos illustrate each scenario.",

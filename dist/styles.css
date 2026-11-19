@@ -44,3 +44,11 @@
   .care-example-grid, .work-details { grid-template-columns: 1fr; }
   .care-example-grid { gap: 36px; }
 }
+
+.studio-reviews figure { border-top: 1px solid var(--line); margin: 0; padding-top: 22px; }
+.studio-reviews blockquote { font-size: clamp(1.0625rem, 2vw, 1.375rem); line-height: 1.55; margin: 0; }
+.studio-reviews figcaption { color: var(--muted); font-size: .875rem; padding-top: 16px; }
+.contact-location { margin: 0; }
+.contact-location > div + div { margin-top: 14px; }
+.contact-location dt { color: var(--muted); font-size: .875rem; }
+.contact-location dd { margin: 4px 0 0; font-size: 1rem; }
