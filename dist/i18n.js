@@ -1,6 +1,20 @@
 (() => {
   'use strict';
   const english = {
+    "Серебристый автомобиль сверху": "Silver car viewed from above",
+    "Выбрать отзыв": "Choose a review",
+    "Приостановить": "Pause slideshow",
+    "Запустить прокрутку": "Play slideshow",
+    "Отзыв 1 из 10": "Review 1 of 10",
+    "Отзыв 2 из 10": "Review 2 of 10",
+    "Отзыв 3 из 10": "Review 3 of 10",
+    "Отзыв 4 из 10": "Review 4 of 10",
+    "Отзыв 5 из 10": "Review 5 of 10",
+    "Отзыв 6 из 10": "Review 6 of 10",
+    "Отзыв 7 из 10": "Review 7 of 10",
+    "Отзыв 8 из 10": "Review 8 of 10",
+    "Отзыв 9 из 10": "Review 9 of 10",
+    "Отзыв 10 из 10": "Review 10 of 10",
     "Все услуги": "All services",
     "Кузов": "Bodywork",
     "Фары": "Headlights",
