@@ -28,8 +28,8 @@
 .studio-reviews .review-slide { border: 0; padding: 0; }
 .review-slide[hidden] { display: none; }
 .review-track { min-height: 245px; }
-.review-person { display: flex; align-items: center; gap: 14px; }
-.studio-reviews .review-person figcaption { padding: 0; color: var(--ink); font-size: 1rem; font-weight: 600; }
+.studio-reviews .review-person { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 14px; padding: 0; }
+.review-person strong { color: var(--ink); font-size: 1rem; font-weight: 600; }
 .review-person p { font-size: .875rem; color: var(--muted); margin-top: 3px; }
 .review-photo { width: 60px; height: 60px; flex: 0 0 60px; border-radius: 50%; background: #b0bcaf url("assets/review-portraits.jpg") var(--avatar-x) var(--avatar-y) / 500% 200% no-repeat; }
 .review-stars { margin: 19px 0 12px; font-size: 1.125rem; letter-spacing: .14em; color: #8c4b25; }
